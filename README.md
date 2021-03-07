@@ -4,6 +4,8 @@
 
 *대체로 합리적인 JavaScript 접근 방법*
 
+금정sw 버전
+
 > **참고**: 이 가이드는 사용자가 [Babel](https://babeljs.io)과 [babel-preset-airbnb](https://npmjs.com/babel-preset-airbnb) 또는 이와 동등한 것을 사용한다고 가정합니다. 또한 사용자가 어플리케이션에 [airbnb-browser-shims](https://npmjs.com/airbnb-browser-shims)와 함께 shims/polyfills 또는 이와 동등한 것을 설치했다고 가정합니다. 
 
 [![Downloads](https://img.shields.io/npm/dm/eslint-config-airbnb.svg)](https://www.npmjs.com/package/eslint-config-airbnb)
