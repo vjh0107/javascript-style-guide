@@ -653,9 +653,9 @@
 ## 함수 (Functions)
 
   <a name="functions--declarations"></a><a name="7.1"></a>
-  - [7.1](#functions--declarations) 함수선언식 대신 기명 함수표현식을 사용하세요. eslint: [`func-style`](https://eslint.org/docs/rules/func-style)
+  - [7.1](#functions--declarations) 함수선언식(익명함수) 대신 기명 함수표현식을 사용하세요. eslint: [`func-style`](https://eslint.org/docs/rules/func-style)
 
-    > 왜? 함수선언은 호이스트됩니다. 즉, 파일에서 함수를 정의하기 전에 함수를 참조하는 것이 쉽다는 것 - 너무 쉽다는 것 - 을 의미합니다. 이것은 가독성과 유지관리성를 해칩니다. 만약 함수의 정의가 나머지 파일을 이해하는데 방해가 될 정도로 크거나 복잡하다면, 이제 함수를 모듈 밖으로 추출해내야 할 때입니다! 포함된 변수로부터 추론된 이름인지와 관계 없이(현대 브라우저 또는 Babel과 같은 컴파일러를 쓸 때 흔히 볼 수 있듯이) 표현의 이름을 명시적으로 짓는 것을 잊지 마세요. 이를 통해 Error 콜 스택에 대한 모든 추정을 제거할 수 있습니다. ([토론](https://github.com/airbnb/javascript/issues/794))
+    > 왜? 함수선언은 호이스트(hoist)됩니다. 즉, 파일에서 함수를 정의하기 전에 함수를 참조하는 것이 쉽다는 것을 의미합니다. 이것은 가독성과 유지관리성를 해칩니다. 만약 함수의 정의가 나머지 파일을 이해하는데 방해가 될 정도로 크거나 복잡하다면, 이제 함수를 모듈 밖으로 추출해내야 할 때입니다! 포함된 변수로부터 추론된 이름인지와 관계 없이(현대 브라우저 또는 Babel과 같은 컴파일러를 쓸 때 흔히 볼 수 있듯이) 표현의 이름을 명시적으로 짓는 것을 잊지 마세요. 이를 통해 Error 콜 스택에 대한 모든 추정을 제거할 수 있습니다. ([토론](https://github.com/airbnb/javascript/issues/794))
 
     ```javascript
     // bad
